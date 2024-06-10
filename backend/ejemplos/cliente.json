@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "nombre": "Empresa ABC",
+    "direccion": "Calle Falsa 123",
+    "ciudad": "Ciudad Ejemplo",
+    "email": "contacto@abc.com",
+    "telefono": "1234567890"
+  }
+,
+  {
+    "id": 2,
+    "nombre": "Repuestos Ki",
+    "direccion": "Carrera Falsa 202",
+    "ciudad": "Ciudad Madrigal",
+    "email": "Rp@abc.com",
+    "telefono": "12345610020"
+  },
+{
+  "id": 3,
+  "nombre": "Repuestos Uno",
+  "direccion": "Calle Real 101",
+  "ciudad": "Ciudad Sol",
+  "email": "R1@abc.com",
+  "telefono": "12345610021"
+},
+{
+  "id": 4,
+  "nombre": "Repuestos Dos",
+  "direccion": "Avenida Luna 202",
+  "ciudad": "Ciudad Luna",
+  "email": "R2@abc.com",
+  "telefono": "12345610022"
+},
+{
+  "id": 5,
+  "nombre": "Repuestos Tres",
+  "direccion": "Boulevard Estrella 303",
+  "ciudad": "Ciudad Estrella",
+  "email": "R3@abc.com",
+  "telefono": "12345610023"
+},
+{
+  "id": 6,
+  "nombre": "Repuestos Cuatro",
+  "direccion": "Travesia Cometa 404",
+  "ciudad": "Ciudad Cometa",
+  "email": "R4@abc.com",
+  "telefono": "12345610024"
+},
+{
+  "id": 7,
+  "nombre": "Repuestos Cinco",
+  "direccion": "Pasaje Planeta 505",
+  "ciudad": "Ciudad Planeta",
+  "email": "R5@abc.com",
+  "telefono": "12345610025"
+},
+{
+  "id": 8,
+  "nombre": "Repuestos Seis",
+  "direccion": "Camino Galaxia 606",
+  "ciudad": "Ciudad Galaxia",
+  "email": "R6@abc.com",
+  "telefono": "12345610026"
+},
+{
+  "id": 9,
+  "nombre": "Repuestos Siete",
+  "direccion": "Ruta Universo 707",
+  "ciudad": "Ciudad Universo",
+  "email": "R7@abc.com",
+  "telefono": "12345610027"
+},
+{
+  "id": 10,
+  "nombre": "Repuestos Ocho",
+  "direccion": "Paseo Cosmos 808",
+  "ciudad": "Ciudad Cosmos",
+  "email": "R8@abc.com",
+  "telefono": "12345610028"
+},
+{
+  "id": 11,
+  "nombre": "Repuestos Nueve",
+  "direccion": "Via Lactea 909",
+  "ciudad": "Ciudad Lactea",
+  "email": "R9@abc.com",
+  "telefono": "12345610029"
+},
+{
+  "id": 12,
+  "nombre": "Repuestos Diez",
+  "direccion": "Sendero Nebulosa 1010",
+  "ciudad": "Ciudad Nebulosa",
+  "email": "R10@abc.com",
+  "telefono": "12345610030"
+}
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "clienteID": 1,
+    "login": "usuario1",
+    "contrasena": "password1",
+    "direccion": "Calle 123",
+    "email": "usuario1@example.com",
+    "telefono": "1234567890"
+
+  },
+  {
+    "id": 2,
+    "clienteID": 2,
+    "login": "usuario2",
+    "contrasena": "password2",
+    "direccion": "Avenida 456",
+    "email": "usuario2@example.com",
+    "telefono": "0987654321"
+   
+  },
+  {
+    "id": 3,
+    "clienteID": 3,
+    "login": "usuario3",
+    "contrasena": "password3",
+    "direccion": "Calle 123",
+    "email": "juan@yahpo.com",
+    "telefono": "0987654322"
+
+  },
+  {
+    "id": 4,
+    "clienteID": 4,
+    "login": "usuario4",
+    "contrasena": "password4",
+    "direccion": "Avenida 234",
+    "email": "ana@yahpo.com",
+    "telefono": "0987654323"
+
+  },
+  {
+    "id": 5,
+    "clienteID": 5,
+    "login": "usuario5",
+    "contrasena": "password5",
+    "direccion": "Boulevard 345",
+    "email": "carlos@yahpo.com",
+    "telefono": "0987654324"
+
+  },
+  {
+    "id": 6,
+    "clienteID": 6,
+    "login": "usuario6",
+    "contrasena": "password6",
+    "direccion": "Travesia 456",
+    "email": "sofia@yahpo.com",
+    "telefono": "0987654325"
+ 
+  },
+  {
+    "id": 7,
+    "clienteID": 7,
+    "login": "usuario7",
+    "contrasena": "password7",
+    "direccion": "Pasaje 567",
+    "email": "luisa@yahpo.com",
+    "telefono": "0987654326"
+
+  },
+  {
+    "id": 8,
+    "clienteID": 8,
+    "login": "usuario8",
+    "contrasena": "password8",
+    "direccion": "Camino 678",
+    "email": "diego@yahpo.com",
+    "telefono": "0987654327"
+
+  },
+  {
+    "id": 9,
+    "clienteID": 9,
+    "login": "usuario9",
+    "contrasena": "password9",
+    "direccion": "Ruta 789",
+    "email": "isabel@yahpo.com",
+    "telefono": "0987654328"
+
+  },
+  {
+    "id": 10,
+    "clienteID": 10,
+    "login": "usuario10",
+    "contrasena": "password10",
+    "direccion": "Paseo 890",
+    "email": "miguel@yahpo.com",
+    "telefono": "0987654329"
+
+  },
+  {
+    "id": 11,
+    "clienteID": 11,
+    "login": "usuario11",
+    "contrasena": "password11",
+    "direccion": "Via 901",
+    "email": "laura@yahpo.com",
+    "telefono": "0987654330"
+
+  },
+  {
+    "id": 12,
+    "clienteID": 12,
+    "login": "usuario12",
+    "contrasena": "password12",
+    "direccion": "Sendero 012",
+    "email": "javier@yahpo.com",
+    "telefono": "0987654331"
+
+  }
+]

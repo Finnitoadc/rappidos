@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "clienteID": 1,
+    "nombre": "Sucursal Centro",
+    "direccion": "Avenida Principal 123",
+    "telefono": "1234567890"
+
+  },
+  {
+    "id": 2,
+    "clienteID": 2,
+    "nombre": "Sucursal Norte",
+    "direccion": "Calle Secundaria 456",
+    "telefono": "0987654321"
+
+  },
+  {
+    "id": 3,
+    "clienteID": 3,
+    "nombre": "Sucursal Este",
+    "direccion": "Avenida Principal 123",
+    "telefono": "0987654322"
+
+  },
+  {
+    "id": 4,
+    "clienteID": 4,
+    "nombre": "Sucursal Sur",
+    "direccion": "Calle Terciaria 789",
+    "telefono": "0987654323"
+
+  },
+  {
+    "id": 5,
+    "clienteID": 5,
+    "nombre": "Sucursal Oeste",
+    "direccion": "Boulevard Cuaternario 012",
+    "telefono": "0987654324"
+
+  },
+  {
+    "id": 6,
+    "clienteID": 6,
+    "nombre": "Sucursal Central",
+    "direccion": "Travesia Quinternario 345",
+    "telefono": "0987654325"
+
+  },
+  {
+    "id": 7,
+    "clienteID": 7,
+    "nombre": "Sucursal Periferia",
+    "direccion": "Pasaje Sexternario 678",
+    "telefono": "0987654326"
+
+  },
+  {
+    "id": 8,
+    "clienteID": 8,
+    "nombre": "Sucursal Externa",
+    "direccion": "Camino Septernario 901",
+    "telefono": "0987654327"
+
+  },
+  {
+    "id": 9,
+    "clienteID": 9,
+    "nombre": "Sucursal Interna",
+    "direccion": "Ruta Octonario 234",
+    "telefono": "0987654328"
+
+  },
+  {
+    "id": 10,
+    "clienteID": 10,
+    "nombre": "Sucursal Superior",
+    "direccion": "Paseo Nonario 567",
+    "telefono": "0987654329"
+
+  },
+  {
+    "id": 11,
+    "clienteID": 11,
+    "nombre": "Sucursal Inferior",
+    "direccion": "Via Decenario 890",
+    "telefono": "0987654330"
+
+  },
+  {
+    "id": 12,
+    "clienteID": 12,
+    "nombre": "Sucursal Lateral",
+    "direccion": "Sendero Undecenario 012",
+    "telefono": "0987654331"
+
+  }
+]

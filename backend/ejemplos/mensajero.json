@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Perez",
+    "direccion": "Calle 123",
+    "email": "juan.perez@example.com",
+    "telefono": "1234567890"
+  },
+  {
+    "id": 2,
+    "nombre": "Maria Gomez",
+    "direccion": "Avenida 456",
+    "email": "maria.gomez@example.com",
+    "telefono": "0987654321"
+  },
+  {
+    "id": 3,
+    "nombre": "Juan Perez",
+    "direccion": "Calle 123",
+    "email": "juan.perez@example.com",
+    "telefono": "0987654322"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Torres",
+    "direccion": "Avenida 234",
+    "email": "ana.torres@example.com",
+    "telefono": "0987654323"
+  },
+  {
+    "id": 5,
+    "nombre": "Carlos Rodriguez",
+    "direccion": "Boulevard 345",
+    "email": "carlos.rodriguez@example.com",
+    "telefono": "0987654324"
+  },
+  {
+    "id": 6,
+    "nombre": "Sofia Ramirez",
+    "direccion": "Travesia 456",
+    "email": "sofia.ramirez@example.com",
+    "telefono": "0987654325"
+  },
+  {
+    "id": 7,
+    "nombre": "Luisa Morales",
+    "direccion": "Pasaje 567",
+    "email": "luisa.morales@example.com",
+    "telefono": "0987654326"
+  },
+  {
+    "id": 8,
+    "nombre": "Diego Sanchez",
+    "direccion": "Camino 678",
+    "email": "diego.sanchez@example.com",
+    "telefono": "0987654327"
+  },
+  {
+    "id": 9,
+    "nombre": "Isabel Castro",
+    "direccion": "Ruta 789",
+    "email": "isabel.castro@example.com",
+    "telefono": "0987654328"
+  },
+  {
+    "id": 10,
+    "nombre": "Miguel Ortiz",
+    "direccion": "Paseo 890",
+    "email": "miguel.ortiz@example.com",
+    "telefono": "0987654329"
+  },
+  [
+    {
+      "id": 11,
+      "nombre": "Laura Garcia",
+      "direccion": "Via 901",
+      "email": "laura.garcia@example.com",
+      "telefono": "0987654330"
+    },
+    {
+      "id": 12,
+      "nombre": "Javier Fernandez",
+      "direccion": "Sendero 012",
+      "email": "javier.fernandez@example.com",
+      "telefono": "0987654331"
+    }
+  ]
+  
+]
+
+  
