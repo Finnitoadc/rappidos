@@ -1,7 +1,4 @@
 import Servicio from '../models/Servicio.js';
-import Cliente from '../models/Cliente.js';
-import Usuario from '../models/Usuario.js';
-import Mensajero from '../models/Mensajero.js';
 import Sequelize from '../config/database.js';
 
 // Obtener todos los servicios
@@ -204,6 +201,85 @@ export const uploadImage = async (req, res) => {
     } else {
       res.status(404).json({ error: 'Servicio no encontrado' });
     }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Obtener los pedidos atendidos por mensajero en un mes especificado
+export const getPedidosAtendidosPorMensajeroEnMes = async (req, res) => {
+  const { mensajeroId, year, month } = req.params;
+  try {
+    const startDate = new Date(Date.UTC(year, month - 1, 1));
+    const endDate = new Date(Date.UTC(year, month, 0, 23, 59, 59, 999));
+
+    const result = await Sequelize.query(
+      `SELECT * FROM "Servicios" WHERE "mensajeroID" = :mensajeroId AND "fecha_solicitud" BETWEEN :startDate AND :endDate`,
+      {
+        replacements: { mensajeroId, startDate, endDate },
+        type: Sequelize.QueryTypes.SELECT
+      }
+    );
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Obtener los pedidos solicitados por cliente y por mes
+export const getPedidosPorClienteyMes = async (req, res) => {
+  const { clienteId, year, month } = req.params;
+  try {
+    const startDate = new Date(Date.UTC(year, month - 1, 1));
+    const endDate = new Date(Date.UTC(year, month, 0, 23, 59, 59, 999));
+
+    const result = await Sequelize.query(
+      `SELECT * FROM "Servicios" WHERE "clienteID" = :clienteId AND "fecha_solicitud" BETWEEN :startDate AND :endDate`,
+      {
+        replacements: { clienteId, startDate, endDate },
+        type: Sequelize.QueryTypes.SELECT
+      }
+    );
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+export const getPedidosPorMes = async (req, res) => {
+  const { year, month } = req.params;
+  try {
+    const startDate = new Date(Date.UTC(year, month - 1, 1));
+    const endDate = new Date(Date.UTC(year, month, 0, 23, 59, 59, 999));
+
+    const result = await Sequelize.query(
+      `SELECT * FROM "Servicios" WHERE fecha_solicitud >= :startDate AND fecha_solicitud <= :endDate`,
+      {
+        replacements: { startDate, endDate },
+        type: Sequelize.QueryTypes.SELECT
+      }
+    );
+
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getPedidosAtendidosEnMes = async (req, res) => {
+  const { year, month } = req.params;
+  try {
+    const startDate = new Date(Date.UTC(year, month - 1, 1));
+    const endDate = new Date(Date.UTC(year, month, 0, 23, 59, 59, 999));
+
+    const result = await Sequelize.query(
+      `SELECT * FROM "Servicios" WHERE "fecha_solicitud" >= :startDate AND fecha_solicitud <= :endDate`,
+      {
+        replacements: { startDate, endDate },
+        type: Sequelize.QueryTypes.SELECT
+      }
+    );
+
+    res.json(result);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

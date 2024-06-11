@@ -13,7 +13,9 @@ import {
   countPedidosPorMes,
   getServiciosByMensajeroId,
   pedidosSolicitados,
-  uploadImage
+  uploadImage,
+  getPedidosAtendidosEnMes,
+  getPedidosPorMes
 } from '../controllers/servicioController.js';
 
 const router = Router();
@@ -35,6 +37,10 @@ router.get('/cuentas/completados', countPedidosCompletados);
 router.get('/cuentas/:year/:month', countPedidosPorMes);
 router.get('/mensajeros/:mensajeroId', getServiciosByMensajeroId);
 router.get('/solicitados', pedidosSolicitados);
+
+router.get('/mes/:year/:month', getPedidosPorMes);
+router.get('/atendidos/:year/:month', getPedidosAtendidosEnMes);
+
 
 // Luego define las rutas con parámetros
 router.get('/:id', getServicioById);
