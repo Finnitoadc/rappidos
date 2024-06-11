@@ -44,8 +44,8 @@ const MensajeroPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200 p-4">
-      <div className="w-full max-w-2xl p-8 space-y-6 bg-base-100 shadow-lg rounded-xl">
+    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white p-4">
+      <div className="w-full max-w-2xl p-8 space-y-6 bg-gray-800 shadow-lg rounded-xl">
         <h2 className="text-2xl font-bold text-center">Seguimiento del Pedido</h2>
         <div className="flex items-center space-x-4">
           <input
@@ -53,96 +53,83 @@ const MensajeroPage = () => {
             value={pedidoId}
             onChange={handlePedidoIdChange}
             placeholder="Ingrese el número de seguimiento"
-            className="input input-bordered w-3/4"
+            className="input input-bordered w-3/4 p-2 rounded-md border-gray-600 bg-gray-700 text-white placeholder-gray-400"
           />
           <button
             onClick={handleBuscarPedido}
-            className="btn btn-primary"
+            className="btn btn-primary px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
           >
             Buscar
           </button>
         </div>
         {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         {pedidoInfo && (
-          <div className="card bg-base-100 shadow-xl p-4">
+          <div className="card bg-gray-800 shadow-xl p-6 rounded-md">
             <div className="card-body">
-              <h3 className="card-title text-primary text-center mb-4">Detalles del Pedido</h3>
-              <div className="space-y-2">
+              <h3 className="card-title text-blue-400 text-center mb-4">Detalles del Pedido</h3>
+              <div className="space-y-4">
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Pedido ID:</span>
+                  <span className="font-semibold">Pedido ID:</span>
                   <span>{pedidoInfo.id}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Usuario:</span>
+                  <span className="font-semibold">Usuario:</span>
                   <span>{usuarioNombre}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Mensajero:</span>
+                  <span className="font-semibold">Mensajero:</span>
                   <span>{mensajeroNombre}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Fecha Solicitud:</span>
+                  <span className="font-semibold">Fecha Solicitud:</span>
                   <span>{new Date(pedidoInfo.fecha_solicitud).toLocaleString()}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Tipo Transporte:</span>
+                  <span className="font-semibold">Tipo Transporte:</span>
                   <span>{pedidoInfo.tipo_transporte}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Número de Paquetes:</span>
+                  <span className="font-semibold">Número de Paquetes:</span>
                   <span>{pedidoInfo.numero_paquetes}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Estado:</span>
+                  <span className="font-semibold">Estado:</span>
                   <span>{pedidoInfo.estado}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Origen:</span>
+                  <span className="font-semibold">Origen:</span>
                   <span>{pedidoInfo.origen}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Destino:</span>
+                  <span className="font-semibold">Destino:</span>
                   <span>{pedidoInfo.destino}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Ciudad:</span>
+                  <span className="font-semibold">Ciudad:</span>
                   <span>{pedidoInfo.ciudad}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Descripción:</span>
+                  <span className="font-semibold">Descripción:</span>
                   <span>{pedidoInfo.descripcion}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Foto:</span>
+                  <span className="font-semibold">Foto:</span>
                   <span>
                     {pedidoInfo.fotoURL ? (
                       <a href={`http://localhost:5000${pedidoInfo.fotoURL}`} target="_blank" rel="noopener noreferrer">
-                        <img src={`http://localhost:5000${pedidoInfo.fotoURL}`} alt="Foto del pedido" className="w-32 h-32 object-cover cursor-pointer" />
+                        <img src={`http://localhost:5000${pedidoInfo.fotoURL}`} alt="Foto del pedido" className="w-32 h-32 object-cover cursor-pointer rounded-md" />
                       </a>
                     ) : (
                       'No hay foto disponible'
                     )}
                   </span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Fecha Creación:</span>
+                  <span className="font-semibold">Fecha Creación:</span>
                   <span>{new Date(pedidoInfo.createdAt).toLocaleString()}</span>
                 </div>
-                <hr className="my-2" />
                 <div className="flex justify-between mt-3">
-                  <span className="font-bold">Fecha Actualización:</span>
+                  <span className="font-semibold">Fecha Actualización:</span>
                   <span>{new Date(pedidoInfo.updatedAt).toLocaleString()}</span>
                 </div>
               </div>
@@ -152,8 +139,7 @@ const MensajeroPage = () => {
       </div>
     </div>
   );
-
-
+  
 };
 
 export default MensajeroPage;

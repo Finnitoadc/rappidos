@@ -161,7 +161,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+  
         {/* Sección de Pedidos Recientes */}
         <section className="mt-8">
           <div className="card bg-base-100 shadow-xl">
@@ -207,7 +207,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+  
         {/* Selección de Fecha y Botón */}
         <div className="flex flex-col items-center mt-8">
           <label className="text-white mb-4">Seleccionar Fecha:</label>
